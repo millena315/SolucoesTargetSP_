@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float sp = 67.83643;
+    float rj = 36.67866;
+    float mg = 29.22988;
+    float es = 27.16548;
+    float out = 19.84953;
+    float total = sp + rj + mg + es + out;
+    printf("%f\n", total);
+    float psp = (sp/total)*100;
+    float prj = (rj/total)*100;
+    float pmg = (mg/total)*100;
+    float pes = (es/total)*100;
+    float pout = (out/total)*100;
+    printf("Porcentagem de SP %f\n", psp);
+    printf("Porcentagem de RJ %f\n", prj);
+    printf("Porcentagem de MG %f\n", pmg);
+    printf("Porcentagem de ES %f\n", pes);
+    printf("Porcentagem de OUT %f\n", pout);
+    return 0;
+}
