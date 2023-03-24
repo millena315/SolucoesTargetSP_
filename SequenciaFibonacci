@@ -1,1 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+int num, i = 1;
+    int nfib[2] = {0, 1};
+
+    printf("Cálculo de Sequencia de Fibonacci\n");
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    while (nfib[i] < num) {
+        i++;
+        nfib[i] = nfib[i-1] + nfib[i-2];
+    }
+
+    if (nfib[i] == num) {
+        printf("O número %d pertence à sequência de Fibonacci.\n", num);
+    } else {
+        printf("O número %d não pertence à sequência de Fibonacci.\n", num);
+    }
+    return 0;
+}
 
